@@ -163,6 +163,7 @@ body {
 }
 
 .skill-level-form {
+  display: none;
   padding-bottom: 30px;
 }
 
@@ -265,6 +266,7 @@ body {
 }
 
 .challenge-preference-form {
+  display: none;
   padding-bottom: 30px;
 }
 
@@ -371,6 +373,7 @@ body {
 }
 
 .form-summary {
+  display: none;
   padding-bottom: 30px;
 }
 
@@ -465,4 +468,43 @@ body {
 
 #backBtn:active {
   background-color: var(--orange-active);
+}
+
+.congratulation-box {
+  display: none;
+  background-color: var(--white);
+  margin-top: 30px;
+  padding: 100px 100px;
+  border-radius: 12px;
+}
+
+.congratulations-box-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.congratulations-box-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.congratulations-box-icon i {
+  color: var(--white);
+  font-size: 8rem;
+  border-radius: 50%;
+  background-color: var(--orange);
+  padding: 40px;
+}
+
+.congratulation-box-text {
+  width: 100%;
+}
+
+.congratulation-box-text p {
+  text-align: center;
+  color: var(--dark-gray);
+  width: 500px;
 }
