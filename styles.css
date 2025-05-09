@@ -4,12 +4,13 @@
   --black: #111827;
   --gray: #E5E7EB;
   --light-gray: #D1D5DB;
+  --dark-gray: #6B7280;
   --orange: #FC6C4C;
   --orange-shadow: #F4EDD6;
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Manrope", sans-serif;
   background-color: var(--bg-color);
   display: flex;
   align-items: center;
@@ -18,7 +19,18 @@ body {
 
 .multi-step-form-box {
   background-color: var(--white);
-  padding: 30px;
+  padding: 60px;
+  border-radius: 12px;
+}
+
+.multi-step-form-steps {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  border-bottom: 2px solid var(--gray);
+  padding-bottom: 30px;
 }
 
 .multi-step-form-steps .step {
@@ -34,7 +46,14 @@ body {
   color: var(--white);
 }
 
-.step-bar {}
+.step-bar {
+  background-color: var(--gray);
+  padding: 4px 10px;
+  border-radius: 20px;
+  width: 80px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
 
 .multi-step-form-title {
   text-align: center;
@@ -63,4 +82,60 @@ body {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.multi-step-form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 0px;
+}
+
+.multi-step-form-section h2 {
+  margin-bottom: 0px;
+}
+
+.multi-step-form-section p {
+  color: var(--dark-gray);
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-row label {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.form-row input {
+  color: var(--black);
+  padding: 5px;
+  width: 230px;
+  border-radius: 7px;
+  border: 1px solid var(--light-gray);
+}
+
+.form-fullname {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-email {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-phone-number {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-portfolio-link {
+  display: flex;
+  flex-direction: column;
 }

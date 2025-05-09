@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <!-- custom css -->
   <link rel="stylesheet" href="styles.css">
   <!-- required meta tags -->
@@ -35,21 +44,25 @@
         </div>
         <div class="multi-step-form">
           <form action="#">
-            <div class="form-fullname">
-              <label for="fullname">Full Name</label>
-              <input type="text" id="fullName" name="fullname" placeholder="John Doe" required>
+            <div class="form-row">
+              <div class="form-fullname">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullName" name="fullname" placeholder="John Doe" required>
+              </div>
+              <div class="form-email">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="name@email.com" required>
+              </div>
             </div>
-            <div class="form-email">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="name@email.com" required>
-            </div>
-            <div class="form-phone-number">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phoneNumber" name="phone" placeholder="+91 1234567890" required>
-            </div>
-            <div class="fomr-portfolio-link">
-              <label for="portfolio">Portfolio/GitHub Link</label>
-              <input type="url" id="portfolio" name="portfolio" placeholder="github.com/rishipurwar1" required>
+            <div class="form-row">
+              <div class="form-phone-number">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phoneNumber" name="phone" placeholder="+91 1234567890" required>
+              </div>
+              <div class="form-portfolio-link">
+                <label for="portfolio">Portfolio/GitHub Link</label>
+                <input type="url" id="portfolio" name="portfolio" placeholder="github.com/rishipurwar1" required>
+              </div>
             </div>
             <div class="form-next-button">
               <button type="button" id="nextStepBtn" class="next-button">Next Step</button>
