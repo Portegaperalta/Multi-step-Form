@@ -1,0 +1,66 @@
+:root {
+  --bg-color: #F3F3E3;
+  --white: #FFFFFF;
+  --black: #111827;
+  --gray: #E5E7EB;
+  --light-gray: #D1D5DB;
+  --orange: #FC6C4C;
+  --orange-shadow: #F4EDD6;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.multi-step-form-box {
+  background-color: var(--white);
+  padding: 30px;
+}
+
+.multi-step-form-steps .step {
+  background-color: var(--gray);
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.multi-step-form-steps .step-active {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.step-bar {}
+
+.multi-step-form-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.multi-step-form-title h1 {
+  font-weight: 700;
+}
+
+.multi-step-form-text {
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.multi-step-form-text p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.multi-step-form-steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- custom css -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi Step Form</title>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="multi-step-form">
+      <div class="multi-step-form-title">
+        <h1>Join our Community of Developers</h1>
+        <div class="multi-step-form-text">
+          <p>To join our Community and participate in frontend challenges. Please fill out the following form.</p>
+        </div>
+      </div>
+      <div class="multi-step-form-box">
+        <div class="multi-step-form-steps">
+          <div class="step step-active">1</div>
+          <div class="step-bar"></div>
+          <div class="step">2</div>
+          <div class="step-bar"></div>
+          <div class="step">3</div>
+          <div class="step-bar"></div>
+          <div class="step">4</div>
+        </div>
+        <div class="multi-step-form-section">
+          <h2>Personal Information</h2>
+          <p>Please provide your personal details so we can get to know you better</p>
+        </div>
+        <div class="multi-step-form">
+          <form action="#">
+            <div class="form-fullname">
+              <label for="fullname">Full Name</label>
+              <input type="text" id="fullName" name="fullname" placeholder="John Doe" required>
+            </div>
+            <div class="form-email">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="name@email.com" required>
+            </div>
+            <div class="form-phone-number">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phoneNumber" name="phone" placeholder="+91 1234567890" required>
+            </div>
+            <div class="fomr-portfolio-link">
+              <label for="portfolio">Portfolio/GitHub Link</label>
+              <input type="url" id="portfolio" name="portfolio" placeholder="github.com/rishipurwar1" required>
+            </div>
+            <div class="form-next-button">
+              <button type="button" id="nextStepBtn" class="next-button">Next Step</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
