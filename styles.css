@@ -259,6 +259,108 @@ body {
   font-weight: 600;
 }
 
+.challenge-preference-form-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.challenge-preference-form-text h2 {
+  margin-bottom: 0px;
+}
+
+.challenge-preference-form-text p {
+  color: var(--dark-gray);
+}
+
+.preference-radio input[type=radio] {
+  width: 15px;
+}
+
+.preference-radio input[type=radio]:checked {
+  background-color: var(--orange);
+}
+
+.preference-text p {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.html-css-js-preference {
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--gray);
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 100px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.html-css-js-preference:hover {
+  border-color: var(--orange);
+}
+
+.react-preference {
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--gray);
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 12px;
+  padding-right: 116px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.react-preference:hover {
+  border-color: var(--orange);
+}
+
+.angular-preference {
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--gray);
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 133px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.angular-preference:hover {
+  border-color: var(--orange);
+}
+
+.vue-preference {
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--gray);
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 130px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.vue-preference:hover {
+  border-color: var(--orange);
+}
+
 .multi-form-buttons {
   display: flex;
   justify-content: space-between;
