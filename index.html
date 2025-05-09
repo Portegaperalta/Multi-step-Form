@@ -22,12 +22,14 @@
 <body>
   <div class="main-container">
     <div class="multi-step-form">
+
       <div class="multi-step-form-title">
         <h1>Join our Community of Developers</h1>
         <div class="multi-step-form-text">
           <p>To join our Community and participate in frontend challenges. Please fill out the following form.</p>
         </div>
       </div>
+
       <div class="multi-step-form-box">
         <div class="multi-step-form-steps">
           <div class="step step-active">1</div>
@@ -38,12 +40,12 @@
           <div class="step-bar"></div>
           <div class="step">4</div>
         </div>
-        <div class="multi-step-form-section">
-          <h2>Personal Information</h2>
-          <p>Please provide your personal details so we can get to know you better</p>
-        </div>
-        <div class="multi-step-form">
-          <form action="#">
+        <div class="personal-info-form">
+          <div class="personal-info-form-text">
+            <h2>Personal Information</h2>
+            <p>Please provide your personal details so we can get to know you better</p>
+          </div>
+          <form action="#" id="personalInfoForm">
             <div class="form-row">
               <div class="form-fullname">
                 <label for="fullname">Full Name</label>
@@ -64,14 +66,64 @@
                 <input type="url" id="portfolio" name="portfolio" placeholder="github.com/rishipurwar1" required>
               </div>
             </div>
-            <div class="form-next-button">
-              <button type="button" id="nextStepBtn" class="next-button">Next Step</button>
+          </form>
+        </div>
+
+        <div class="skill-level-form">
+          <div class="skill-level-form-text">
+            <h2>Skill Level</h2>
+            <p>Please tell us about your skill level in frontend development.</p>
+          </div>
+          <form action="#" id="skillLevelForm">
+            <div class="form-row">
+              <div class="beginner-skill">
+                <div class="beginner-skill-icon">
+                  <i class="fa-solid fa-seedling"></i>
+                </div>
+                <div class="beginner-skill-text">
+                  <p>Beginner</p>
+                </div>
+              </div>
+              <div class="intermediate-skill">
+                <div class="intermediate-skill-icon">
+                  <i class="fa-solid fa-compass"></i>
+                </div>
+                <div class="intermediate-skill-text">
+                  <p>Intermediate</p>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="advanced-skill">
+                <div class="advanced-skill-icon">
+                  <i class="fa-solid fa-rocket"></i>
+                </div>
+                <div class="advanced-skill-text">
+                  <p>Advanced</p>
+                </div>
+              </div>
+              <div class="expert-skill">
+                <div class="expert-skill-icon">
+                  <i class="fa-solid fa-trophy"></i>
+                </div>
+                <div class="expert-skill-text">
+                  <p>Expert</p>
+                </div>
+              </div>
             </div>
           </form>
+        </div>
+
+        <div class="multi-form-buttons">
+          <button type="button" id="backBtn">Go Back</button>
+          <button type="button" id="nextBtn">Next Step</button>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- fontAwesome Js -->
+  <script src="https://kit.fontawesome.com/389cdbd17f.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

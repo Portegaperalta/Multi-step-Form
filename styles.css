@@ -6,6 +6,8 @@
   --light-gray: #D1D5DB;
   --dark-gray: #6B7280;
   --orange: #FC6C4C;
+  --orange-hover: #f36748;
+  --orange-active: #df6043;
   --orange-shadow: #F4EDD6;
 }
 
@@ -91,11 +93,11 @@ body {
   padding: 10px 0px;
 }
 
-.multi-step-form-section h2 {
+.personal-info-form-text h2 {
   margin-bottom: 0px;
 }
 
-.multi-step-form-section p {
+.personal-info-form-text p {
   color: var(--dark-gray);
 }
 
@@ -114,10 +116,21 @@ body {
 
 .form-row input {
   color: var(--black);
-  padding: 5px;
+  padding: 9px 5px;
   width: 230px;
   border-radius: 7px;
   border: 1px solid var(--light-gray);
+  cursor: pointer;
+}
+
+.form-row input::placeholder {
+  font-family: "Manrope", sans-serif;
+  color: var(--light-gray);
+  font-weight: 600;
+}
+
+.form-row input:focus {
+  outline-color: var(--orange);
 }
 
 .form-fullname {
@@ -138,4 +151,67 @@ body {
 .form-portfolio-link {
   display: flex;
   flex-direction: column;
+}
+
+.skill-level-form-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-level-form-text h2 {
+  margin-bottom: 0px;
+}
+
+.skill-level-form-text p {
+  color: var(--dark-gray);
+}
+
+.multi-form-buttons {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid var(--gray);
+  padding-top: 30px;
+}
+
+#nextBtn {
+  font-weight: 600;
+  font-family: "Manrope", sans-serif;
+  color: var(--white);
+  background-color: var(--orange);
+  padding: 9px 25px;
+  border: 1px solid var(--orange);
+  border-radius: 9px;
+  cursor: pointer;
+  margin-bottom: 0px;
+  transition: 0.2s ease-in-out;
+}
+
+#nextBtn:hover {
+  background-color: #f36748;
+}
+
+#nextBtn:active {
+  background-color: #df6043;
+}
+
+#backBtn {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  color: var(--orange);
+  background-color: var(--white);
+  padding: 9px 25px;
+  border: 1px solid var(--orange);
+  border-radius: 9px;
+  cursor: pointer;
+  margin-bottom: 0px;
+  transition: 0.1s ease-in-out;
+}
+
+#backBtn:hover {
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+#backBtn:active {
+  background-color: var(--orange-active);
 }
