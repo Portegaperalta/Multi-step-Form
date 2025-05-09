@@ -4,6 +4,7 @@
   --black: #111827;
   --gray: #E5E7EB;
   --light-gray: #D1D5DB;
+  --lighter-gray: #F2F3F5;
   --dark-gray: #6B7280;
   --orange: #FC6C4C;
   --orange-hover: #f36748;
@@ -123,7 +124,7 @@ body {
   padding: 9px 5px;
   width: 230px;
   border-radius: 7px;
-  border: 1px solid var(--light-gray);
+  border: 2px solid var(--light-gray);
   cursor: pointer;
 }
 
@@ -131,6 +132,10 @@ body {
   font-family: "Manrope", sans-serif;
   color: var(--light-gray);
   font-weight: 600;
+}
+
+.form-row input:hover {
+  border: 2px solid var(--orange);
 }
 
 .form-row input:focus {
@@ -259,6 +264,10 @@ body {
   font-weight: 600;
 }
 
+.challenge-preference-form {
+  padding-bottom: 30px;
+}
+
 .challenge-preference-form-text {
   display: flex;
   flex-direction: column;
@@ -359,6 +368,53 @@ body {
 
 .vue-preference:hover {
   border-color: var(--orange);
+}
+
+.form-summary {
+  padding-bottom: 30px;
+}
+
+.form-summary-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-summary-title h2 {
+  margin-bottom: 0px;
+}
+
+.form-summary-title p {
+  color: var(--dark-gray);
+}
+
+.form-summary-boxes {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-box {
+  background-color: var(--lighter-gray);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 200px;
+  margin-right: 30px;
+  border-radius: 10px;
+}
+
+.summary-box h3 {
+  color: var(--dark-gray);
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.summary-box p {
+  color: var(--black);
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 2px;
 }
 
 .multi-form-buttons {
