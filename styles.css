@@ -93,6 +93,10 @@ body {
   padding: 10px 0px;
 }
 
+.personal-info-form {
+  padding-bottom: 30px;
+}
+
 .personal-info-form-text h2 {
   margin-bottom: 0px;
 }
@@ -153,6 +157,10 @@ body {
   flex-direction: column;
 }
 
+.skill-level-form {
+  padding-bottom: 30px;
+}
+
 .skill-level-form-text {
   display: flex;
   flex-direction: column;
@@ -164,6 +172,91 @@ body {
 
 .skill-level-form-text p {
   color: var(--dark-gray);
+}
+
+.beginner-skill {
+  border: 2px solid var(--gray);
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 107px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.beginner-skill:hover {
+  border-color: var(--orange);
+}
+
+.intermediate-skill {
+  border: 2px solid var(--gray);
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 100px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.intermediate-skill:hover {
+  border-color: var(--orange);
+}
+
+.advanced-skill {
+  border: 2px solid var(--gray);
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 100px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.advanced-skill:hover {
+  border-color: var(--orange);
+}
+
+.expert-skill {
+  border: 2px solid var(--gray);
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 148px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.expert-skill:hover {
+  border-color: var(--orange);
+}
+
+.skill-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-icon i {
+  color: var(--white);
+  padding: 10px;
+  background-color: var(--orange);
+  border-radius: 50%;
+}
+
+.skill-text {
+  font-weight: 600;
 }
 
 .multi-form-buttons {
